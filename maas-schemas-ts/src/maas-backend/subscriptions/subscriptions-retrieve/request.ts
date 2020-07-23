@@ -37,6 +37,7 @@ export type Request = t.Branded<
   {
     identityId?: Units_.IdentityId;
     userId?: Units_.IdentityId;
+    identityId?: Units_.IdentityId;
     nextPeriod?: boolean;
     payload?: {};
     headers?: ApiCommon_.Headers;
@@ -51,6 +52,7 @@ export const Request = t.brand(
     t.partial({
       identityId: Units_.IdentityId,
       userId: Units_.IdentityId,
+      identityId: Units_.IdentityId,
       nextPeriod: t.boolean,
       payload: t.type({}),
       headers: ApiCommon_.Headers,
@@ -66,6 +68,7 @@ export const Request = t.brand(
     {
       identityId?: Units_.IdentityId;
       userId?: Units_.IdentityId;
+      identityId?: Units_.IdentityId;
       nextPeriod?: boolean;
       payload?: {};
       headers?: ApiCommon_.Headers;
